@@ -1,8 +1,12 @@
 {
     "version": 2,
-    "functions": {
-        "*.py": {
-            "runtime": "python@3.10"
+    "builds": [
+        {
+            "src": "api/*.py",
+            "use": "@vercel/python",
+            "config": {
+            "pythonVersion": "3.10"
+            }
         }
-    }
+    ]
 }
