@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import pandas as pd
 from joblib import load
 from flask_cors import CORS
+import os
 
 
 # Load the trained model
@@ -32,4 +33,4 @@ def home():
     return "Welcome to the Stroke Prediction API"
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
