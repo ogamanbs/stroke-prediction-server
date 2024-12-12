@@ -3,6 +3,7 @@ import pandas as pd
 from joblib import load
 from flask_cors import CORS
 
+
 # Load the trained model
 model = load('./models/stroke_prediction_model.joblib')
 
