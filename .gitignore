@@ -15,3 +15,5 @@ __pycache__/
 
 # Ignore logs
 *.log
+
+notes.txt

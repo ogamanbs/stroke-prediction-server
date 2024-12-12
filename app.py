@@ -4,7 +4,7 @@ from joblib import load
 from flask_cors import CORS
 
 # Load the trained model
-model = load('./stroke_prediction_model.joblib')
+model = load('./models/stroke_prediction_model.joblib')
 
 #initialize the flask app
 app = Flask(__name__)
@@ -25,7 +25,7 @@ def predict():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-    
+
 @app.route('/')
 def home():
     return "Welcome to the Stroke Prediction API"
