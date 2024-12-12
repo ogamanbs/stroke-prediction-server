@@ -2,7 +2,7 @@
     "version": 2,
     "functions": {
         "*.py": {
-            "runtime": "vercel-python@latest"
+            "runtime": "vercel-python@3.10"
         }
     }
 }
